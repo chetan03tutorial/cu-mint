@@ -1,0 +1,7 @@
+endpoints:
+  - n1:
+      endpoint: "/order"
+      operation: GET
+  - n2:
+      endpoint: /txn
+      operation: POST

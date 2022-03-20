@@ -1,0 +1,12 @@
+[
+  {
+    "name" : "api1-name",
+    "endpoint": "/apiPath1",
+    "operation" : "GET"
+  },
+  {
+    "name" : "api2-name",
+    "endpoint": "/apiPath2/{txnId}",
+    "operation": "POST"
+  }
+]

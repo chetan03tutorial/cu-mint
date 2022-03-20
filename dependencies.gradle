@@ -1,0 +1,32 @@
+ext{
+    spring_boot_version = "2.6.3"
+    lombok_version = "1.18.4"
+    junit_version = "5.7.0"
+    jMapper_version = "1.6.1.CR2"
+    hystrix_version = "2.1.6.RELEASE"
+    mockito_version = "1.10.19"
+    assert_version = "3.21.0"
+    tomcat_jdbc_version = "9.0.22"
+
+
+    libs = [
+            sbWeb : "org.springframework.boot:spring-boot-starter-web:" + spring_boot_version,
+            scHystrix : "org.springframework.cloud: spring-cloud-starter-netflix-hystrix:" + hystrix_version,
+            sbJpa : "org.springframework.boot:spring-boot-starter-data-jpa:" + spring_boot_version,
+            jMapper : "com.googlecode.jmapper-framework:jmapper-core:" + jMapper_version,
+            lombok : "org.projectlombok:lombok:" + lombok_version,
+            tomcatJdbc: "org.apache.tomcat:tomcat-jdbc:"+ tomcat_jdbc_version
+    ]
+
+    testLibs = [
+            junit : "org.junit.jupiter:junit-jupiter-api:" + junit_version,
+            junit_jupiter : "org.junit.jupiter:junit-jupiter-engine:" + junit_version,
+            mockito : "org.mockito:mockito-all:" + mockito_version,
+            assert : "org.assertj:assertj-core:" + assert_version
+    ]
+
+    annotationProcessors = [
+            lombok : "org.projectlombok:lombok:" + lombok_version
+    ]
+
+}
